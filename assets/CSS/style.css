@@ -1,0 +1,184 @@
+@import url(https://fonts.google.com/specimen/Outfit); 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+.box {
+    width: 23rem;
+    height: 41rem;
+    background: hsl(216, 50%, 16%);
+    border-radius: 5%;
+    
+    }
+
+.container .box span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}    
+
+body {
+         margin: 0rem;
+}
+
+
+.cube img{
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 20rem;
+        border-radius: 5%;
+}
+
+.container .cube{
+       position: relative;
+}
+
+.container .cube div {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 50%);;
+    top: 0;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+    border-radius: 5%;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container .cube div:hover {
+    opacity: 1;
+}
+
+.container .cube div img {
+    position: absolute;
+    width: 2.5rem;
+    left: 37%;
+    top: 37%;
+}
+
+div, h1{
+    font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+    margin: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.8rem;
+    
+}
+
+.description {
+    margin: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+
+svg, p{
+    display: inline-block;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+   
+}
+
+.cost {
+    display: flex;
+    color: hsl(178, 100%, 50%);
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    width: 50%;
+}
+
+
+
+.cost p{
+    margin-left: 0.5rem;
+    color: hsl(178, 100%, 50%);
+}
+.timer {
+    display:flex;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: -1.5rem;
+    width: 50%;
+}
+.timer p{
+    margin-left: 0.5rem;
+}
+
+hr {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    border-color: hsl(215, 32%, 27%)
+}
+
+.photo {
+    width: 2rem;
+}
+
+.autor {
+    width: 40rem;
+    display: flex;
+    margin-left: 1.5rem;
+}
+
+.autor img{
+    border: white solid 0.1rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.autorp{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.autorp span{
+    color:hsl(0, 0%, 100%)
+}
+
+.attribution {
+    margin-top: 1rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1440px) and (min-width:375px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        background: hsl(217, 54%, 11%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        }
+}
